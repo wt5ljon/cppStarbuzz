@@ -1,5 +1,4 @@
-#ifndef BEVERAGE_HPP
-#define BEVERAGE_HPP
+#pragma once
 
 #include <iostream>
 
@@ -15,5 +14,3 @@ class Beverage {
         virtual double cost() = 0;
         virtual ~Beverage() {}
 };
-
-#endif  // BEVERAGE_HPP

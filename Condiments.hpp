@@ -1,5 +1,4 @@
-#ifndef CONDIMENTS_HPP
-#define CONDIMENTS_HPP
+#pragma once
 
 #include <iostream>
 #include "Beverage.hpp"
@@ -34,5 +33,3 @@ class Whip: public CondimentDecorator {
         double cost() override;
         ~Whip();
 };
-
-#endif  //CONDIMENTS_HPP

@@ -1,5 +1,4 @@
-#ifndef CONDIMENTDECORATOR_HPP
-#define CONDIMENTDECORATOR_HPP
+#pragma once
 
 #include <iostream>
 #include "Beverage.hpp"
@@ -9,5 +8,3 @@ class CondimentDecorator: public Beverage {
         virtual std::string getDescription() = 0;
         virtual ~CondimentDecorator() {}
 };
-
-#endif  // CONDIMENTDECORATOR_HPP

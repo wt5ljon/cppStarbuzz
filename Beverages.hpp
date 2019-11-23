@@ -1,5 +1,4 @@
-#ifndef BEVERAGES_HPP
-#define BEVERAGES_HPP
+#pragma once
 
 #include <iostream>
 #include "Beverage.hpp"
@@ -31,5 +30,3 @@ class HouseBlend: public Beverage {
         double cost() override;
         ~HouseBlend() {}
 };
-
-#endif  //BEVERAGES_HPP
