@@ -1,13 +1,13 @@
 #include "Beverage.hpp"
 
 Beverage::Beverage()
-    : m_size("Unknown"),m_description("Unknown Beverage") {}
+    : m_size("Unknown Size"),m_description("Unknown Beverage") {}
 
 std::string Beverage::getDescription() {
     return m_size + " " + m_description;
 }
 
-void Beverage::setSize(std::string t_size) {
+void Beverage::setSize(const std::string& t_size) {
     m_size = t_size;
 }
 

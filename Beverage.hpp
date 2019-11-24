@@ -8,7 +8,7 @@ class Beverage {
         std::string m_description;
     public:
         Beverage();
-        void setSize(std::string t_size);
+        void setSize(const std::string& t_size);
         std::string getSize();
         virtual std::string getDescription();
         virtual double cost() = 0;

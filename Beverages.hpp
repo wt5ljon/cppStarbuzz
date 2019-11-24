@@ -5,28 +5,28 @@
 
 class Espresso: public Beverage {
     public:
-        Espresso(std::string);
+        Espresso(const std::string&);
         double cost() override;
         ~Espresso() {}
 };
 
 class DarkRoast: public Beverage {
     public:
-        DarkRoast(std::string);
+        DarkRoast(const std::string&);
         double cost() override;
         ~DarkRoast() {}
 };
 
 class Decaf: public Beverage {
     public:
-        Decaf();
+        Decaf(const std::string&);
         double cost() override;
         ~Decaf() {}
 };
 
 class HouseBlend: public Beverage {
     public:
-        HouseBlend(std::string);
+        HouseBlend(const std::string&);
         double cost() override;
         ~HouseBlend() {}
 };
