@@ -8,9 +8,9 @@ class Mocha: public CondimentDecorator {
     private:
         Beverage* m_beverage;
     public:
-        Mocha(Beverage* t_beverage): m_beverage(t_beverage) {}
-        std::string getDescription() override;
-        double cost() override;
+        Mocha(Beverage* const t_beverage): m_beverage(t_beverage) {}
+        std::string getDescription() const override;
+        double cost() const override;
         ~Mocha();
 };
 
@@ -18,9 +18,9 @@ class Soy: public CondimentDecorator {
     private:
         Beverage* m_beverage;
     public:
-        Soy(Beverage* t_beverage): m_beverage(t_beverage) {}
-        std::string getDescription() override;
-        double cost() override;
+        Soy(Beverage* const t_beverage): m_beverage(t_beverage) {}
+        std::string getDescription() const override;
+        double cost() const override;
         ~Soy();
 };
 
@@ -28,8 +28,8 @@ class Whip: public CondimentDecorator {
     private:
         Beverage* m_beverage;
     public:
-        Whip(Beverage* t_beverage): m_beverage(t_beverage) {}
-        std::string getDescription() override;
-        double cost() override;
+        Whip(Beverage* const t_beverage): m_beverage(t_beverage) {}
+        std::string getDescription() const override;
+        double cost() const override;
         ~Whip();
 };

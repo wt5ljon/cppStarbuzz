@@ -9,8 +9,8 @@ class Beverage {
     public:
         Beverage();
         void setSize(const std::string& t_size);
-        std::string getSize();
-        virtual std::string getDescription();
-        virtual double cost() = 0;
+        std::string getSize() const;
+        virtual std::string getDescription() const;
+        virtual double cost() const = 0;
         virtual ~Beverage() {}
 };

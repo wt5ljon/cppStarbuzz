@@ -1,10 +1,10 @@
 #include "Condiments.hpp"
 
-std::string Mocha::getDescription() {
+std::string Mocha::getDescription() const {
     return m_beverage->getDescription() + ", Mocha";
 }
 
-double Mocha::cost() {
+double Mocha::cost() const {
     if (m_size == "Tall")
         return 0.15 + m_beverage->cost();
     else if (m_size == "Grande")
@@ -17,11 +17,11 @@ Mocha::~Mocha() {
     delete m_beverage;
 }
 
-std::string Soy::getDescription() {
+std::string Soy::getDescription() const {
     return m_beverage->getDescription() + ", Soy";
 }
 
-double Soy::cost() {
+double Soy::cost() const {
     if (m_size == "Tall")
         return 0.10 + m_beverage->cost();
     else if (m_size == "Grande")
@@ -35,11 +35,11 @@ Soy::~Soy() {
     delete m_beverage;
 }
 
-std::string Whip::getDescription() {
+std::string Whip::getDescription() const {
     return m_beverage->getDescription() + ", Whip";
 }
 
-double Whip::cost() {
+double Whip::cost() const {
     if (m_size == "Tall")
         return 0.05 + m_beverage->cost();
     else if (m_size == "Grande")

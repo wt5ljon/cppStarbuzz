@@ -5,6 +5,6 @@
 
 class CondimentDecorator: public Beverage {
     public:
-        virtual std::string getDescription() = 0;
+        virtual std::string getDescription() const = 0;
         virtual ~CondimentDecorator() {}
 };
